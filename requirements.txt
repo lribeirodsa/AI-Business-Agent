@@ -1,0 +1,10 @@
+streamlit
+langgraph
+langchain-openai
+networkx
+matplotlib
+fpdf2
+requests
+beautifulsoup4
+wikipedia
+wikipedia-api
