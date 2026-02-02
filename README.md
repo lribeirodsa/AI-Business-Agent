@@ -42,6 +42,8 @@ This agent does not replace the compliance analyst; it elevates them to the role
 **Would you like me to adjust the tone to be more academic, or perhaps create a visual representation of the LangGraph logic for this specific use case?**
 
 
+# Development
+
 ## Master Business Auditor & KYC Intelligence Platform
 This project is a high-performance, multi-agent AI system built with LangGraph and Streamlit. It automates complex Due Diligence, Know Your Customer (KYC), and Compliance workflows by integrating global sanctions lists, corporate registries, and real-time intelligence.
  Project Evolution & Milestones
