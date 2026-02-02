@@ -8,3 +8,7 @@ requests
 beautifulsoup4
 wikipedia
 wikipedia-api
+python-dotenv
+matplotlib
+seaborn
+seaborn
