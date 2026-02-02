@@ -1,4 +1,47 @@
-# AI Business Agent
+# AI Business Agent: PEP Investigation with LangGraph and Data Intelligence**
+
+In today’s landscape of financial compliance and anti-corruption efforts, identifying **Politically Exposed Persons (PEPs)** and sanctioned individuals requires more than a simple database search. It demands an investigative AI agent capable of performing complex relational analysis and making autonomous decisions.
+
+### **The Architecture of Thought: LangGraph**
+
+Unlike traditional systems, this agent is built on **LangGraph**. While standard AI chains are linear, LangGraph allows for the creation of a **cyclic graph**. This means the agent can:
+
+* Query a database.
+* Assess if the results are ambiguous (e.g., homonyms/namesakes).
+* Decide to seek additional sources before issuing a verdict.
+
+### **The Data Arsenal: OpenSanctions, UN, and OFAC**
+
+To ensure the surgical precision required in **Know Your Customer (KYC)** processes, the agent integrates via API with the world’s most robust sources:
+
+* **OpenSanctions:** Acts as the central hub, consolidating global PEP data and international sanctions lists into a structured format.
+* **UN Lists (Security Council):** Focused on individuals linked to global conflicts and terrorism.
+* **OFAC (U.S. Department of the Treasury):** Essential for international financial system compliance, monitoring the SDN (Specially Designated Nationals) list.
+
+---
+
+### **The Agent’s Workflow**
+
+The investigation process follows four critical stages:
+
+1. **Entity Extraction:** The agent receives a name or document and normalizes the data (handling spelling variations and transliterations).
+2. **Multi-Source Search:** Parallel requests are triggered across APIs. The agent doesn't just search for the name; it cross-references dates of birth and known political positions.
+3. **Relationship Graph Analysis:** Leveraging OpenSanctions' capabilities, the agent identifies not only the target but also their **"Relatives and Close Associates" (RCA)**, expanding the investigation to prevent the use of "strawmen" or proxies.
+4. **Risk Reporting:** Instead of a simple "Yes/No," the agent generates a reasoned justification, assigning a confidence score based on data similarity.
+
+> **Note on Precision:** The use of Generative AI here is not to "invent" facts, but to interpret vast amounts of technical data and transform them into an executive summary for the human analyst.
+
+---
+
+### **Conclusion**
+
+This agent does not replace the compliance analyst; it elevates them to the role of a high-level decision-maker. By automating the screening of OFAC, UN, and OpenSanctions lists through **LangGraph orchestration**, we reduce analysis time from hours to seconds, effectively mitigating reputational risks.
+
+---
+
+**Would you like me to adjust the tone to be more academic, or perhaps create a visual representation of the LangGraph logic for this specific use case?**
+
+
 ## Master Business Auditor & KYC Intelligence Platform
 This project is a high-performance, multi-agent AI system built with LangGraph and Streamlit. It automates complex Due Diligence, Know Your Customer (KYC), and Compliance workflows by integrating global sanctions lists, corporate registries, and real-time intelligence.
  Project Evolution & Milestones
